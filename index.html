@@ -50,13 +50,22 @@
     }
     .note {
       font-family: "Indie Flower", cursive;
-      font-size: 3vmin;
+      font-size: 2.5vmin;
       text-align: justify;
       width: 80vmin;
       line-height: 1.2;
       margin: 2vmin;
       margin-left: 0;
     }
+
+    .note.strike {
+      text-decoration: line-through;
+    }
+
+    .note.note-small {
+      font-size: 2vmin;
+    }
+
     .socials {
       display: flex;
       align-items: center;
@@ -150,40 +159,35 @@
       background-color: black;
       margin: 0 8px;
     }
-    .publications {
-      padding: 4vmin 0 0 0;
+    .hor-divider {
+      height: 2px;
+      width: 200px;
+      border-radius: 1px;
+      background-color: rgb(233, 233, 233);
+      margin: 8px 0;
     }
-    .publications > h5 {
+    .section {
+      padding: 2vmin 0 0 0;
+    }
+    .section > h5 {
       font-size: 3vmin;
       font-weight: 600;
       margin: 0;
     }
-    .publications a {
+    .section a {
       font-size: 2vmin;
       margin-left: 1vmin;
     }
     p {
       margin-bottom: 1.5vmin;
     }
+    .grey {
+      color: grey !important;
+    }
   </style>
   <body>
     <main class="main">
       <p class="title">M. Ege Ercan | Software Engineer</p>
-      <p class="note">
-        P.S. I am building a new portfolio. <br />
-        In the meanwhile, you can either check out my
-        <br />
-        <a
-          class="fancy-link"
-          target="_blank"
-          href="http://eggei-old-portfolio.s3-website-us-east-1.amazonaws.com/"
-          rel="noopener noreferrer"
-        >
-          dated portfolio</a
-        >
-        or learn about me from these places:
-      </p>
-
       <div class="socials" style="display: flex">
         <div
           class="icon github"
@@ -275,7 +279,7 @@
         >
       </div>
 
-      <div class="publications">
+      <div class="section">
         <h5>Publications</h5>
         <a
           style="padding: 0.6vmin"
@@ -286,8 +290,38 @@
         >
       </div>
 
-      <div class="publications">
+      <div style="margin: 4vmin"></div>
+
+      <p class="note strike">
+        P.S. I am building a new portfolio. <br />
+        In the meanwhile, you can either check out my
+        <br />
+        <a
+          class="fancy-link"
+          target="_blank"
+          href="http://eggei-old-portfolio.s3-website-us-east-1.amazonaws.com/"
+          rel="noopener noreferrer"
+        >
+          dated portfolio</a
+        >
+        or learn about me from these places:
+        <br />
+        - June 6th, 2021
+      </p>
+      <p class="note">
+        P.P.S. It's been a while, and I still don't have a new portfolio. I
+        think I will just keep this one for a while :) <br />
+        - May 1st 2023
+      </p>
+
+      <!-- <div class="section grey">
         <h5>Playground</h5>
+        <p class="note note-small" style="color: black">
+          Note: This stayed as a WIP since I last updated my portfolio stuff.
+          For some reason browser does not render this project properly either.
+          So, I might not be as proud as I was before about this small challenge
+          here. - May 1st, 2023
+        </p>
         <p style="font-size: 2vmin">
           Check this thing I have recently been playing with, I am very proud of
           it. <br />
@@ -310,7 +344,7 @@
           target="_blank"
           >See the Code (Stackblitz)</a
         >
-      </div>
+      </div> -->
     </main>
   </body>
 </html>
