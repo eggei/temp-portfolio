@@ -23,6 +23,10 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript">
@@ -115,6 +119,7 @@
       text-decoration: underline;
       transition: box-shadow 0.15s;
       border-radius: 0.6vmin;
+      padding: 0.3vmin 0.5vmin;
     }
     .fancy-link:hover {
       box-shadow: inset 0 -5vmin 0 0 var(--bg);
@@ -167,7 +172,7 @@
       margin: 8px 0;
     }
     .section {
-      padding: 2vmin 0 0 0;
+      padding: 3.5vmin 0 0 0;
     }
     .section > h5 {
       font-size: 3vmin;
@@ -177,6 +182,12 @@
     .section a {
       font-size: 2vmin;
       margin-left: 1vmin;
+    }
+    .section.list {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
     }
     p {
       margin-bottom: 1.5vmin;
@@ -279,40 +290,84 @@
         >
       </div>
 
-      <div class="section">
+      <div class="section list">
         <h5>Publications</h5>
         <a
-          style="padding: 0.6vmin"
           class="fancy-link"
           href="https://medium.com/capital-one-tech/a-comparison-of-data-visualization-libraries-for-react-27f8fe409934"
           target="_blank"
-          >A Comparison of Data Visualization Libraries for React</a
+          ><i class="bi bi-box-arrow-up-right"></i> A Comparison of Data
+          Visualization Libraries for React</a
+        >
+        <a
+          class="fancy-link"
+          href="https://drive.google.com/file/d/1w4ct6W5qt5FUqLP1codUAjlwS-n8uoBW/view?usp=share_link"
+          target="_blank"
+          ><i class="bi bi-box-arrow-up-right"></i> A research on dolphins'
+          surface behavior and vocalization</a
         >
       </div>
 
-      <div style="margin: 4vmin"></div>
+      <div class="section list">
+        <h5>Things I fiddled with</h5>
+        <a
+          class="fancy-link"
+          href="https://codepen.io/eggei/pen/mdmyEaX"
+          target="_blank"
+          ><i class="bi bi-box-arrow-up-right"></i> CSS 3D Box with Angle
+          Input</a
+        >
+        <a
+          class="fancy-link"
+          href="https://github.com/eggei/golang-dialogflow-api"
+          target="_blank"
+          ><i class="bi bi-box-arrow-up-right"></i> Golang API to utilize Google
+          Dialogflow</a
+        >
+        <a
+          class="fancy-link"
+          href="https://editor.p5js.org/eggei/full/O-QRuXXVe"
+          target="_blank"
+          ><i class="bi bi-box-arrow-up-right"></i> Unbeatable TicTacToe with
+          minmax algorithm using p5.js</a
+        >
+        <a
+          class="fancy-link"
+          href="http://eggei-old-portfolio.s3-website-us-east-1.amazonaws.com/"
+          target="_blank"
+          ><i class="bi bi-box-arrow-up-right"></i> My first ever portfolio
+          site, right out of SWE school</a
+        >
+      </div>
 
-      <p class="note strike">
-        P.S. I am building a new portfolio. <br />
-        In the meanwhile, you can either check out my
-        <br />
+      <div style="margin-top: 4vmin"><hr /></div>
+
+      <p class="note">Hey there! Thanks for checking me out!</p>
+      <p class="note">
+        Did you know I used to be a professional drummer? See my videos
         <a
           class="fancy-link"
           target="_blank"
-          href="http://eggei-old-portfolio.s3-website-us-east-1.amazonaws.com/"
+          href="https://www.youtube.com/channel/UCWlNEc6ccUrtUcVPwyxt_6g"
           rel="noopener noreferrer"
-        >
-          dated portfolio</a
-        >
-        or learn about me from these places:
-        <br />
-        - June 6th, 2021
+          >here</a
+        >.
       </p>
       <p class="note">
-        P.P.S. It's been a while, and I still don't have a new portfolio. I
-        think I will just keep this one for a while :) <br />
-        - May 1st 2023
+        I played drums for lots of bands and recordings in the past and am known
+        as a good drum instructor back in my home town.
       </p>
+      <p class="note">
+        Nowadays, I play for a local band called Sinnet in Boston:
+        <a
+          class="fancy-link"
+          target="_blank"
+          href="http://www.sinnetsongs.com/"
+          rel="noopener noreferrer"
+          >check us out.</a
+        >
+      </p>
+      <p class="note">- Ege</p>
 
       <!-- <div class="section grey">
         <h5>Playground</h5>
